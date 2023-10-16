@@ -19,13 +19,7 @@ const TextArea = styled.textarea`
   resize: vertical;
 `
 
-export default function AreaDeTexto({
-  nomeLabel,
-  nome,
-  linhas,
-  colunas,
-  obrigatorio
-}) {
+const AreaDeTexto = ({ nomeLabel, nome, linhas, colunas, obrigatorio }) => {
   return (
     <TextAreaContainer>
       <Label htmlFor={nome}>{nomeLabel}</Label>
@@ -38,3 +32,5 @@ export default function AreaDeTexto({
     </TextAreaContainer>
   )
 }
+
+export default AreaDeTexto

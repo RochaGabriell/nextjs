@@ -17,7 +17,7 @@ const Titulo = styled.h2`
   margin-bottom: 20px;
 `
 
-export default function FormContato() {
+const FormContato = () => {
   return (
     <FormContainer>
       <Titulo>Entre em Contato</Titulo>
@@ -40,3 +40,5 @@ export default function FormContato() {
     </FormContainer>
   )
 }
+
+export default FormContato

@@ -1,20 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
 import Image from 'next/image'
 
-const Container = styled.div`
-  display: flex;
-  margin-top: 10px;
-  align-items: center;
-  gap: 20px;
-`
+import { Container, TextContainer } from './styles'
 
-const TextContainer = styled.div`
-  font-size: 18px;
-  color: #333;
-`
-
-export default function Inicio() {
+const Inicio = () => {
   return (
     <Container>
       <Image src="/imagens/ifpi.png" alt="IFPI" width={200} height={180} />
@@ -25,3 +14,5 @@ export default function Inicio() {
     </Container>
   )
 }
+
+export default Inicio

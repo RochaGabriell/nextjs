@@ -18,12 +18,7 @@ const Input = styled.input`
   border-radius: 4px;
 `
 
-export default function Entrada({
-  nomeLabel,
-  tipo = 'text',
-  nome,
-  obrigatorio = false
-}) {
+const Entrada = ({ nomeLabel, tipo = 'text', nome, obrigatorio = false }) => {
   return (
     <InputContainer>
       <Label htmlFor={nome}>{nomeLabel}</Label>
@@ -31,3 +26,5 @@ export default function Entrada({
     </InputContainer>
   )
 }
+
+export default Entrada

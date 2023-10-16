@@ -3,10 +3,12 @@ import React from 'react'
 import FormContato from '../../components/FormContato'
 import Home from '../page'
 
-export default function Contato() {
+const Contato = () => {
   return (
     <Home>
       <FormContato />
     </Home>
   )
 }
+
+export default Contato

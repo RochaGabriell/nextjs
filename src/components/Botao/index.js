@@ -14,6 +14,8 @@ const StyledButton = styled.button`
   }
 `
 
-export default function Botao({ tipo }) {
+const Botao = ({ tipo }) => {
   return <StyledButton type={tipo}>Enviar</StyledButton>
 }
+
+export default Botao

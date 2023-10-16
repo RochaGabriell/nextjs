@@ -1,16 +1,8 @@
 'use client'
 import Home from '../../page'
-import styled from 'styled-components'
+import { Container } from './styles'
 
-const Container = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-`
-
-export default function Page({ params }) {
+const Page = ({ params }) => {
   const noticias = [
     {
       id: 1,
@@ -25,7 +17,7 @@ export default function Page({ params }) {
       imagemUrl: 'https://github.com/tulioqrxkyde.png'
     }
   ]
-  
+
   const noticiaEncontrada = noticias.find(
     noticia => noticia.id === parseInt(params.slug)
   )
@@ -47,3 +39,5 @@ export default function Page({ params }) {
     </Home>
   )
 }
+
+export default Page
