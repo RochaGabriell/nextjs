@@ -1,14 +1,23 @@
 'use client'
 import Inicio from './inicio/page'
 
-import { MenuContainer, MenuItem, StyledLink, DivImg, IMG } from '../styles/page'
+import {
+  MenuContainer,
+  MenuItem,
+  StyledLink,
+  DivImg,
+  IMG
+} from '../styles/page'
 
 const Home = ({ children = <Inicio /> }) => {
   return (
     <main>
       <MenuContainer>
         <DivImg>
-          <IMG src="/imagens/ifpi.png" alt="IFPI Logo" />
+          <IMG
+            src="https://github.com/RochaGabriell/nextjs/blob/main/src/assets/imagens/ifpi.png?raw=true"
+            alt="IFPI Logo"
+          />
         </DivImg>
         <div>
           <ul>
@@ -20,6 +29,9 @@ const Home = ({ children = <Inicio /> }) => {
             </MenuItem>
             <MenuItem>
               <StyledLink href="/fotos">Fotos</StyledLink>
+            </MenuItem>
+            <MenuItem>
+              <StyledLink href="/nomes">Nomes</StyledLink>
             </MenuItem>
           </ul>
         </div>

@@ -4,7 +4,7 @@ import Home from './page'
 import { ErrorContainer, ErrorMessage, ErrorImage } from '../styles/not-found'
 
 export default function NotFound() {
-  const imagem = '/imagens/astronauta.jpg'
+  const imagem = 'https://github.com/RochaGabriell/nextjs/blob/main/src/assets/imagens/astronauta.jpg?raw=true'
   return (
     <Home>
       <ErrorContainer>

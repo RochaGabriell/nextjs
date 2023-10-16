@@ -1,6 +1,7 @@
 'use client'
 import Home from '../../page'
 import { Container } from './styles'
+import Image from 'next/image'
 
 const Page = ({ params }) => {
   const noticias = [
@@ -29,7 +30,12 @@ const Page = ({ params }) => {
     <Home>
       <Container>
         <div>
-          <img src={noticiaEncontrada.imagemUrl} alt="Imagem da Notícia" />
+          <Image
+            src={noticiaEncontrada.imagemUrl}
+            alt="Imagem da Notícia"
+            width={200}
+            height={200}
+          />
         </div>
         <div>
           <h2>{noticiaEncontrada.titulo}</h2>
